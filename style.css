@@ -1,0 +1,83 @@
+#search-string {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #0046aa;
+  background-image: url(https://www.payback.de/blueberry/static/ui-core/0.942.0/one/assets/search--blue.svg);
+  background-repeat: no-repeat;
+  border: 4px solid;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 18px;
+  padding: 0 30px;
+  background-position: left 5px center;
+}
+
+.container {
+  max-width: 900px;
+  display: flex;
+  position: relative;
+}
+
+.search-popup {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  background-color: #f2f6fb;
+  width: calc(100% - 125px);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.49);
+}
+
+.search-popup__list {
+  width: 160px;
+  background-color: #fff;
+}
+
+.search-popup__list ul {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.search-popup__list ul li {
+  padding: 5px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.search-popup__cards {
+  display: flex;
+  align-content: flex-start;
+  flex-grow: 1;
+  padding: 15px 10px 5px;
+  flex-wrap: wrap;
+}
+
+.search-popup__cards .card {
+  background-color: #fff;
+  color: #4b4b4d;
+  text-align: center;
+  padding: 10px;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.search-popup__cards .card .card_title {
+  font-size: 14px;
+}
+
+.search-popup__cards .card .card_description {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.search-popup__cards .card img {
+  max-width: 100%;
+}
